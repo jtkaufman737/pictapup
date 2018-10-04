@@ -1,0 +1,30 @@
+{
+  "name": "pictapup",
+  "short_name": "pictapup",
+  "icons": [
+    {
+      "src": "/static/img/icons/floof.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/img/icons/regal.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/img/icons/woeisme.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/img/icons/icanhazbecalledcanine?.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4DBA87"
+}
