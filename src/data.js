@@ -3,32 +3,20 @@ export default {
     {
       'id': 0,
       'url': 'https://i.imgur.com/Na2kb1E.png',
-      'comment': '',
-      'info': 'Posted by Kevin on Friday'
+      'comment': 'We Christmassey',
+      'info': 'JTK'
     },
     {
       'id': 1,
-      'url': 'https://i.imgur.com/07taUIP.png',
-      'comment': '',
-      'info': 'Posted by Charles on Tuesday'
+      'url': 'https://i.imgur.com/Nnuba3J.png',
+      'comment': 'Morning mood',
+      'info': 'JTK'
     },
     {
       'id': 2,
-      'url': 'https://i.imgur.com/Nnuba3J.png',
-      'comment': '',
-      'info': 'Posted by Richard on Monday'
-    },
-    {
-      'id': 3,
-      'url': 'https://i.imgur.com/FSxyKrp.png',
-      'comment': '',
-      'info': 'Posted by Richard on Monday'
-    },
-    {
-      'id': 4,
       'url': 'https://i.imgur.com/elrRp3O.png',
-      'comment': '',
-      'info': 'Posted by Richard on Monday'
+      'comment': 'Just wants pistachios',
+      'info': 'JTK'
     }
   ]
 }

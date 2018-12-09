@@ -6,9 +6,16 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import Vuefire from 'vuefire'
+import firebase from './service/firebase'
+
+Vue.use(Vuefire)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  firebase: {
+    pups: firebase.database.ref('pup').orderByChild('created_at')
+  },
   router,
   template: '<App/>',
   components: { App }
