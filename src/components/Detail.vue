@@ -2,15 +2,15 @@
   <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--8-col">
       <div class="picture">
-        <img :src="this.pictures[$route.params.id].url" />
+        <img :src="dog.url" />
       </div>
       <div class="info">
-        <span>{{ this.pictures[$route.params.id].info }}</span>
+        <span>{{ dog.info }}</span>
       </div>
     </div>
     <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
       <div class="comment">
-        <span>{{ this.pictures[$route.params.id].comment }}</span>
+        <span>{{ dog.comment }}</span>
       </div>
       <div class="actions">
         <router-link class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" to="/post">
@@ -21,12 +21,25 @@
   </div>
 </template>
 <script>
-import data from '../data'
+import { find } from 'lodash'
+import Vuefire from 'vuefire'
+import firebase from '../service/firebase'
+
 export default {
   data () {
     return {
-      'pictures': data.pictures
+      dog:null,
     }
+  },
+
+  mounted() {
+    console.log(this.$route.params.id);
+    console.log(this.dog = find(this.$root.dogs, (dog) => dog['.key'] === this.$route.params.id));
+
+    }
+  }
+</script>
+
   }
 }
 </script>

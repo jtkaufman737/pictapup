@@ -8,13 +8,15 @@ Vue.config.productionTip = false
 
 import Vuefire from 'vuefire'
 import firebase from './service/firebase'
+import VueResource from 'vue-resource'
 
 Vue.use(Vuefire)
+Vue.use(VueResource)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   firebase: {
-    pups: firebase.database.ref('pup').orderByChild('created_at')
+    dogs: firebase.database.ref('dog').orderByChild('created_at')
   },
   router,
   template: '<App/>',
