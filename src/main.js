@@ -8,6 +8,7 @@ Vue.config.productionTip = false
 
 import Vuefire from 'vuefire'
 import firebase from './service/firebase'
+import dogs from './service/firebase'
 import VueResource from 'vue-resource'
 
 Vue.use(Vuefire)
@@ -16,7 +17,7 @@ Vue.use(VueResource)
 new Vue({
   el: '#app',
   firebase: {
-    dogs: firebase.database.ref('dog').orderByChild('created_at')
+    dogs: dogs
   },
   router,
   template: '<App/>',

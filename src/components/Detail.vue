@@ -34,7 +34,8 @@ export default {
 
   mounted() {
     console.log(this.$route.params.id);
-    console.log(this.dog = find(this.$root.dogs, (dog) => dog['.key'] === this.$route.params.id));
+    console.log(this.$root.dogs)
+    //console.log(firebase);
 
     }
   }

@@ -10,8 +10,12 @@ var config = {
   messagingSenderId: "38616790344"
 };
 
-firebase.initializeApp(config);
+let app = firebase.initializeApp(config);
+let db = app.database();
+let dogs = db.ref('dogs');
+
 
 export default {
-  database:firebase.database()
+  database:firebase.database(),
+  dogs: dogs
 }
